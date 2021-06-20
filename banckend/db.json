@@ -1,7 +1,24 @@
 {
   "products": [
-    { "id": 1, "description": "Produto 1", "price": 1500 },
-    { "id": 2, "description": "Produto 2", "price": 2500 },
-    { "id": 3, "description": "Produto 3", "price": 3500 }
+    {
+      "id": 1,
+      "description": "Produto 1",
+      "price": 1500
+    },
+    {
+      "id": 2,
+      "description": "Produto 2",
+      "price": 2500
+    },
+    {
+      "id": 3,
+      "description": "Produto 3",
+      "price": 3500
+    },
+    {
+      "name": "ABC",
+      "price": 125.98,
+      "id": 4
+    }
   ]
 }
