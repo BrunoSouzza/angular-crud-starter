@@ -1,3 +1,4 @@
+import { ProductService } from "./../../components/product/product.service"
 import { Component, OnInit } from "@angular/core"
 import { Router } from "@angular/router"
 
@@ -7,9 +8,11 @@ import { Router } from "@angular/router"
   styleUrls: ["./product-crud.component.css"],
 })
 export class ProductCrudComponent implements OnInit {
-  constructor(private router: Router) {}
+  constructor(private router: Router, private productService: ProductService) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.productService.caiuAqui("TeSTE")
+  }
 
   navigateToProductCreate(): void {
     this.router.navigate(["/products/create"])
