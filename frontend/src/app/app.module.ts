@@ -19,6 +19,10 @@ import { MatListModule } from "@angular/material/list"
 import { MatButtonModule } from "@angular/material/button"
 import { MatSnackBarModule } from "@angular/material/snack-bar"
 
+import { FormsModule } from "@angular/forms"
+import { MatFormFieldModule } from "@angular/material/form-field"
+import { MatInputModule } from "@angular/material/input"
+
 import { HttpClientModule } from "@angular/common/http"
 
 @NgModule({
@@ -42,6 +46,9 @@ import { HttpClientModule } from "@angular/common/http"
     MatButtonModule,
     MatSnackBarModule,
     HttpClientModule,
+    FormsModule,
+    MatFormFieldModule,
+    MatInputModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

@@ -14,11 +14,6 @@
       "id": 3,
       "description": "Produto 3",
       "price": 3500
-    },
-    {
-      "name": "ABC",
-      "price": 125.98,
-      "id": 4
     }
   ]
 }
