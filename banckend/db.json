@@ -16,14 +16,9 @@
       "price": 3500
     },
     {
-      "description": "Produto 5",
-      "price": 0,
+      "description": "Produto para excluir ",
+      "price": 5,
       "id": 4
-    },
-    {
-      "description": "Product 8",
-      "price": 93,
-      "id": 5
     }
   ]
 }

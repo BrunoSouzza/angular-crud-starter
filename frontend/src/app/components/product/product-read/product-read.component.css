@@ -3,10 +3,11 @@ table {
 }
 
 span.edit {
+  /* color: #ff4081; */
   color: #3f51b5;
 }
 
 span.delete {
-  color: #00a999;
+  color: #f44336;
   margin-left: 20px;
 }
