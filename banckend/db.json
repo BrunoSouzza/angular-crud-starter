@@ -2,13 +2,13 @@
   "products": [
     {
       "id": 1,
-      "description": "Produto 1",
-      "price": 1500
+      "description": "Produto 1 - Atualizado",
+      "price": 1500.27
     },
     {
       "id": 2,
       "description": "Produto 2",
-      "price": 2500
+      "price": 2499.84
     },
     {
       "id": 3,
@@ -22,7 +22,7 @@
     },
     {
       "description": "Product 8",
-      "price": 0,
+      "price": 93,
       "id": 5
     }
   ]

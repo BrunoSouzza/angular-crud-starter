@@ -1,3 +1,12 @@
 table {
   width: 100%;
 }
+
+span.edit {
+  color: #3f51b5;
+}
+
+span.delete {
+  color: #00a999;
+  margin-left: 20px;
+}
