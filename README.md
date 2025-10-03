@@ -1,39 +1,74 @@
-## This project is a simple CRUD (Create, Read, Update, Delete), using Angular
+## Angular CRUD Project
 
-<p>To view this project, follow the steps below</p>
+Este projeto é uma aplicação CRUD (Create, Read, Update, Delete) desenvolvida em Angular. O objetivo do projeto é demonstrar na prática como criar, listar, atualizar e deletar registros de forma simples e eficiente utilizando o framework Angular para o frontend e o json-server para simular o backend.
 
-### 🔥 Setup
+### Funcionalidades
 
-Clone this repository:
+- **Cadastro** de novos itens/registros.
+- **Listagem** de todos os registros cadastrados.
+- **Edição** de registros existentes.
+- **Exclusão** de registros.
+
+A interface permite a interação completa com os dados, atualizando a tela automaticamente após cada operação.
+
+---
+
+### 🔥 Como rodar o projeto
+
+#### 1. Clone o repositório
 
 ```
 git clone https://github.com/BrunoSouzza/angular_crud.git
 ```
 
-# Back End
-I using fake API with json-server for create my back end. For more details on usage, search your [repository](https://github.com/typicode/json-server), 
+#### 2. Backend (API Fake)
 
-Navigate to the Back End folder and run
+Este projeto utiliza o [json-server](https://github.com/typicode/json-server) para simular uma API RESTful.
+
+No terminal, navegue até a pasta do projeto e execute:
 
 ```
 json-server --watch db.json --port 9000
 ```
 
-Open in your favorite code editor and install all dependencies. 
-For this, run 
- ```
- npm install 
- ```
- or
- ```
- yarn
- ```
+O arquivo `db.json` serve como banco de dados fake, onde os registros do CRUD serão armazenados e manipulados.
 
-# Frontend
+#### 3. Instale as dependências do Frontend
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.0.3.
+Abra o projeto no seu editor de código favorito e instale as dependências com:
 
-## Development server
+```
+npm install
+```
+ou
+```
+yarn
+```
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+#### 4. Inicie o Frontend
 
+O frontend foi gerado com o [Angular CLI](https://github.com/angular/angular-cli) versão 12.0.3.
+
+Para rodar o servidor de desenvolvimento, execute:
+
+```
+ng serve
+```
+
+Acesse o aplicativo em `http://localhost:4200/`. O app irá recarregar automaticamente ao salvar alterações nos arquivos fonte.
+
+---
+
+### Estrutura do Projeto
+
+- **Angular**: Responsável pela interface e lógica de interação com o usuário.
+- **json-server**: Simula o backend, expondo endpoints REST para o CRUD dos dados em `db.json`.
+
+---
+
+### Observações
+
+- O projeto é ideal para quem deseja aprender conceitos práticos de Angular e integração com APIs REST.
+- Pode ser expandido para consumir uma API real, adicionar autenticação, paginação, filtros, entre outros recursos.
+
+---
