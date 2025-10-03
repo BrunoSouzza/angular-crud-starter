@@ -1,74 +1,72 @@
-## Angular CRUD Project
+# Angular CRUD Starter Kit
 
-Este projeto é uma aplicação CRUD (Create, Read, Update, Delete) desenvolvida em Angular. O objetivo do projeto é demonstrar na prática como criar, listar, atualizar e deletar registros de forma simples e eficiente utilizando o framework Angular para o frontend e o json-server para simular o backend.
+> Projeto base para aplicações CRUD (Create, Read, Update, Delete) utilizando Angular. Ideal para iniciar projetos que envolvem manipulação de dados via API REST, com arquitetura moderna e boas práticas de desenvolvimento.
 
-### Funcionalidades
+## 🚀 Tecnologias Utilizadas
+
+- **[Angular](https://angular.io/)**: Framework SPA para construção de interfaces web modernas.
+- **[Angular CLI](https://github.com/angular/angular-cli)**: Ferramenta oficial para scaffolding e gerenciamento do projeto.
+- **[TypeScript](https://www.typescriptlang.org/)**: Superset de JavaScript adotado pelo Angular.
+- **[json-server](https://github.com/typicode/json-server)**: Simula uma API RESTful para desenvolvimento e testes.
+- **RxJS**: Programação reativa, utilizada para manipulação assíncrona de dados.
+- **HTML5/CSS3**: Estrutura e estilos da interface.
+- **Node.js & npm/yarn**: Gerenciamento de dependências e execução de scripts.
+
+## 🧩 Padrões e Boas Práticas
+
+- Estruturação em **componentes** e **serviços**.
+- Separação clara de responsabilidades (componentes, serviços, modelos).
+- Consumo de **API RESTful** via HttpClient.
+- Utilização de **Observables** para requisições assíncronas.
+- Projeto gerado e mantido com **Angular CLI**.
+- Pronto para expansão: autenticação, paginação, filtros, etc.
+
+## ⚙️ Funcionalidades
 
 - **Cadastro** de novos itens/registros.
 - **Listagem** de todos os registros cadastrados.
 - **Edição** de registros existentes.
 - **Exclusão** de registros.
+- Interface responsiva e atualização automática após operações.
 
-A interface permite a interação completa com os dados, atualizando a tela automaticamente após cada operação.
+## 📂 Estrutura do Projeto
 
----
+- `src/app/`: Código-fonte principal (componentes, serviços, modelos).
+- `db.json`: Arquivo usado pelo json-server como banco de dados fake.
 
-### 🔥 Como rodar o projeto
+## 🔥 Como Rodar o Projeto
 
-#### 1. Clone o repositório
+1. **Clone o repositório**
+   ```bash
+   git clone https://github.com/BrunoSouzza/angular-crud-starter.git
+   cd angular-crud-starter
+   ```
 
-```
-git clone https://github.com/BrunoSouzza/angular_crud.git
-```
+2. **Inicie o Backend Fake**
+   ```bash
+   npm install -g json-server
+   json-server --watch db.json --port 9000
+   ```
 
-#### 2. Backend (API Fake)
+3. **Instale as dependências do Frontend**
+   ```bash
+   npm install
+   # ou
+   yarn
+   ```
 
-Este projeto utiliza o [json-server](https://github.com/typicode/json-server) para simular uma API RESTful.
+4. **Inicie o Frontend**
+   ```bash
+   ng serve
+   ```
+   Acesse em [http://localhost:4200](http://localhost:4200)
 
-No terminal, navegue até a pasta do projeto e execute:
+## 💡 Observações
 
-```
-json-server --watch db.json --port 9000
-```
-
-O arquivo `db.json` serve como banco de dados fake, onde os registros do CRUD serão armazenados e manipulados.
-
-#### 3. Instale as dependências do Frontend
-
-Abra o projeto no seu editor de código favorito e instale as dependências com:
-
-```
-npm install
-```
-ou
-```
-yarn
-```
-
-#### 4. Inicie o Frontend
-
-O frontend foi gerado com o [Angular CLI](https://github.com/angular/angular-cli) versão 12.0.3.
-
-Para rodar o servidor de desenvolvimento, execute:
-
-```
-ng serve
-```
-
-Acesse o aplicativo em `http://localhost:4200/`. O app irá recarregar automaticamente ao salvar alterações nos arquivos fonte.
+- Ideal para quem deseja aprender na prática Angular e integração com APIs REST.
+- Fácil de expandir para projetos reais.
+- Contribuições são bem-vindas!
 
 ---
 
-### Estrutura do Projeto
-
-- **Angular**: Responsável pela interface e lógica de interação com o usuário.
-- **json-server**: Simula o backend, expondo endpoints REST para o CRUD dos dados em `db.json`.
-
----
-
-### Observações
-
-- O projeto é ideal para quem deseja aprender conceitos práticos de Angular e integração com APIs REST.
-- Pode ser expandido para consumir uma API real, adicionar autenticação, paginação, filtros, entre outros recursos.
-
----
+> Sinta-se à vontade para sugerir melhorias, abrir issues ou enviar PRs!
