@@ -1,72 +1,62 @@
 # Angular CRUD Starter Kit
 
-> Projeto base para aplicações CRUD (Create, Read, Update, Delete) utilizando Angular. Ideal para iniciar projetos que envolvem manipulação de dados via API REST, com arquitetura moderna e boas práticas de desenvolvimento.
+> Base project for CRUD (Create, Read, Update, Delete) applications using Angular. Perfect for kickstarting projects that require data manipulation through REST APIs, with a modern architecture and development best practices.
 
-## 🚀 Tecnologias Utilizadas
+## 🚀 Technologies Used
 
-- **[Angular](https://angular.io/)**: Framework SPA para construção de interfaces web modernas.
-- **[Angular CLI](https://github.com/angular/angular-cli)**: Ferramenta oficial para scaffolding e gerenciamento do projeto.
-- **[TypeScript](https://www.typescriptlang.org/)**: Superset de JavaScript adotado pelo Angular.
-- **[json-server](https://github.com/typicode/json-server)**: Simula uma API RESTful para desenvolvimento e testes.
-- **RxJS**: Programação reativa, utilizada para manipulação assíncrona de dados.
-- **HTML5/CSS3**: Estrutura e estilos da interface.
-- **Node.js & npm/yarn**: Gerenciamento de dependências e execução de scripts.
+- **[Angular](https://angular.io/)**: SPA framework for building modern web interfaces.
+- **[Angular CLI](https://github.com/angular/angular-cli)**: Official tool for scaffolding and managing Angular projects.
+- **[TypeScript](https://www.typescriptlang.org/)**: JavaScript superset adopted by Angular.
+- **[json-server](https://github.com/typicode/json-server)**: Simulates a RESTful API for development and testing.
+- **RxJS**: Reactive programming library for asynchronous data handling.
+- **HTML5/CSS3**: Interface structure and styling.
+- **Node.js & npm/yarn**: Dependency management and script execution.
 
-## 🧩 Padrões e Boas Práticas
+## 🧩 Patterns & Best Practices
 
-- Estruturação em **componentes** e **serviços**.
-- Separação clara de responsabilidades (componentes, serviços, modelos).
-- Consumo de **API RESTful** via HttpClient.
-- Utilização de **Observables** para requisições assíncronas.
-- Projeto gerado e mantido com **Angular CLI**.
-- Pronto para expansão: autenticação, paginação, filtros, etc.
+- Organized into **components** and **services**.
+- Clear separation of responsibilities (components, services, models).
+- Consumption of **RESTful APIs** via HttpClient.
+- Use of **Observables** for asynchronous requests.
+- Project generated and maintained with **Angular CLI**.
+- Ready for expansion: authentication, pagination, filters, etc.
 
-## ⚙️ Funcionalidades
+## ⚙️ Features
 
-- **Cadastro** de novos itens/registros.
-- **Listagem** de todos os registros cadastrados.
-- **Edição** de registros existentes.
-- **Exclusão** de registros.
-- Interface responsiva e atualização automática após operações.
+- **Create** new items/records.
+- **List** all existing records.
+- **Edit** records.
+- **Delete** records.
+- Responsive interface with automatic updates after operations.
 
-## 📂 Estrutura do Projeto
+## 📂 Project Structure
 
-- `src/app/`: Código-fonte principal (componentes, serviços, modelos).
-- `db.json`: Arquivo usado pelo json-server como banco de dados fake.
+- `src/app/`: Main source code (components, services, models).
+- `db.json`: File used by json-server as a mock database.
 
-## 🔥 Como Rodar o Projeto
+## 🔥 How to Run the Project
 
-1. **Clone o repositório**
+1. **Clone the repository**
    ```bash
    git clone https://github.com/BrunoSouzza/angular-crud-starter.git
    cd angular-crud-starter
    ```
-
-2. **Inicie o Backend Fake**
+2. **Start the Fake Backend**
    ```bash
    npm install -g json-server
    json-server --watch db.json --port 9000
    ```
 
-3. **Instale as dependências do Frontend**
+3. **Install Frontend dependencies**
    ```bash
    npm install
-   # ou
+   # or
    yarn
    ```
+4. **Start the Frontend**
 
-4. **Inicie o Frontend**
    ```bash
    ng serve
    ```
-   Acesse em [http://localhost:4200](http://localhost:4200)
 
-## 💡 Observações
-
-- Ideal para quem deseja aprender na prática Angular e integração com APIs REST.
-- Fácil de expandir para projetos reais.
-- Contribuições são bem-vindas!
-
----
-
-> Sinta-se à vontade para sugerir melhorias, abrir issues ou enviar PRs!
+Access it at http://localhost:4200
